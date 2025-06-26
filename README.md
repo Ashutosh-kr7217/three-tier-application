@@ -166,8 +166,8 @@ DATABASE_URL=postgresql://postgres:password@localhost/demo_app
 REACT_APP_API_URL=http://localhost:8000
 ```
 Example:
-cp backend/.env.example backend/.env
-cp frontend/.env.example frontend/.env
+- cp backend/.env.example backend/.env
+- cp frontend/.env.example frontend/.env
 # Then edit the .env files to set your own credentials and config
 
 ---
