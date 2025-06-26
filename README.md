@@ -86,7 +86,7 @@ CREATE DATABASE demo_app;
 
 ```bash
 cd backend
-python -m venv venv
+python -m venv venv ---or--- in my case(py -3.10 -m venv venv)
 venv\Scripts\activate    # On Windows
 # Or: source venv/bin/activate   # On Mac/Linux
 pip install --upgrade pip
@@ -165,6 +165,10 @@ DATABASE_URL=postgresql://postgres:password@localhost/demo_app
 ```
 REACT_APP_API_URL=http://localhost:8000
 ```
+Example:
+cp backend/.env.example backend/.env
+cp frontend/.env.example frontend/.env
+# Then edit the .env files to set your own credentials and config
 
 ---
 
