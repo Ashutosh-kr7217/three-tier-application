@@ -2,11 +2,14 @@ name: schedule trigger
 
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '*/1 * * * *'
 
 jobs:
   hello_world:
     runs-on: ubuntu-latest
     steps:
+      - name: print actual start time
+        run: date -u
+        
       - name: echo current time of server
         run: echo "The current time of server is $(date)"
